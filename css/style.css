@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("grid.css");
 
-:root { /* 色変更される場合は、#以降のカラーコードを変更してください IE非対応 */
+:root {
     --base-color: #000;
     --link-color: #666;
     --linkhover-color: #999;
@@ -10,9 +10,12 @@
     --white-color: #fff;
 }
 
+html {
+      font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
 img {
 	max-width:100%;
-	height: auto;/*高さ自動*/
+	height: auto;
 }
 a {
     display:block;
@@ -33,8 +36,7 @@ a img:hover {
 	padding-bottom: 0.5rem;
 }
 
-/*ヘッダー
--------------------------------------*/
+/*ヘッダー*/
 .head {
 	display: flex;
     flex-direction: row;
@@ -51,9 +53,9 @@ a img:hover {
 }
 nav ul {
 	display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
 	margin-bottom: 1rem;
 }
 nav li {
@@ -72,7 +74,6 @@ nav a {
 }
 
 @media screen and (min-width: 768px){
-/* PC時はMENUボタンを非表示 */
 #open,#close {
     display: none !important;
 }
@@ -85,8 +86,8 @@ nav a {
 @media screen and (max-width: 768px){
 .head {
 	flex-direction: column;
-    text-align: left;
-    margin-bottom: 20px;
+	text-align: left;
+	margin-bottom: 20px;
 }
 .telbox {
 	margin-left: 0;
@@ -137,20 +138,17 @@ nav li {
 }
 }
 
-/*メイン画像
--------------------------------------*/
+/*メイン画像*/
 .mainimg img {
 	width: 100vw;
 }
 
-/*メインコンテンツ
--------------------------------------*/
+/*メインコンテンツ*/
 main {
     margin: 5rem 0 5rem 0;
 }
 
-/*新着情報
--------------------------------------*/
+/*新着情報*/
 .news h2 {
     border-bottom: 3px solid var(--base-color);
 	padding-bottom: 0.5rem;
@@ -161,8 +159,7 @@ main {
 	padding: 0.5rem 0;
 }
 
-/*フッター
--------------------------------------*/
+/*フッター*/
 footer {
     background-color: var(--back-color);
     padding: 5rem 0;
@@ -171,8 +168,7 @@ footer h5 {
     border-bottom: 3px solid var(--border-color);
 }
 
-/*コピーライト
--------------------------------------*/
+/*コピーライト*/
 .copyright {
     text-align: center;
     padding: 1rem 0;
@@ -184,8 +180,7 @@ footer h5 {
 	display: inline-block;
 }
 
-/*ページトップへ戻るボタン
--------------------------------------*/
+/*ページトップへ戻るボタン*/
 #pagetop {
     position: fixed;
     bottom: 15px;
@@ -202,8 +197,7 @@ footer h5 {
 #pagetop a:hover {
     background-color: var(--link-color);
 }
-/*パンくずリスト
------------------------------------*/
+/*パンくずリスト*/
 .breadcrumb {
     margin: 0 0 1em 0;
     padding: 0;	
