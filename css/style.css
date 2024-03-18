@@ -11,9 +11,10 @@
     --white-color: #fff;
 }
 html {
-	font-family: "Zen Kaku Gothic New", sans-serif;
+	font-family: "Zen Kaku Gothic New", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 	font-weight: 400;
 	font-style: normal;
+}
 img {
 	max-width:100%;
 	height: auto;
